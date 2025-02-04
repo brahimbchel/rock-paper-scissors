@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
     <title>Rock Paper Scissors</title>
   </head>
   <body class="bg-gradient-to-br from-purple-100 to-blue-100 min-h-screen">
@@ -24,25 +31,30 @@
             id="rock_user"
             class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-all shadow-md"
           >
+            <i class="fas fa-hand-rock px-2"></i>
             Rock
           </button>
           <button
             id="paper_user"
             class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-all shadow-md"
           >
+            <i class="fas fa-hand-paper px-2"></i>
             Paper
           </button>
           <button
             id="scissors_user"
             class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-all shadow-md"
           >
+            <i class="fas fa-hand-scissors px-2"></i>
             Scissors
           </button>
         </div>
       </div>
 
       <!-- Game Status -->
-      <div class="bg-white p-6 rounded-lg shadow-md space-y-4 min-w-[200px]">
+      <div
+        class="bg-white p-6 rounded-lg shadow-md space-y-4 min-w-[200px] items-center justify-center"
+      >
         <div class="text-center">
           <p class="text-sm text-gray-600">Score</p>
           <p class="text-2xl font-bold">
@@ -61,25 +73,28 @@
       <!-- Bot Choices -->
       <div class="flex flex-col gap-4">
         <h2 class="text-xl font-semibold text-center text-red-600">
-          Computer Choices
+          Bot Choices
         </h2>
         <div class="flex md:flex-col gap-3">
           <button
             id="rock_bot"
             class="bg-red-700 opacity-50 cursor-not-allowed text-white px-6 py-3 rounded-lg shadow-md"
           >
+            <i class="fas fa-hand-rock px-2"></i>
             Rock
           </button>
           <button
             id="paper_bot"
             class="bg-red-700 opacity-50 cursor-not-allowed text-white px-6 py-3 rounded-lg shadow-md"
           >
+            <i class="fas fa-hand-paper px-2"></i>
             Paper
           </button>
           <button
             id="scissors_bot"
             class="bg-red-700 opacity-50 cursor-not-allowed text-white px-6 py-3 rounded-lg shadow-md"
           >
+            <i class="fas fa-hand-scissors px-2"></i>
             Scissors
           </button>
         </div>

@@ -43,18 +43,18 @@ function setActiveUserChoice(choice) {
 // Update active styling for bot choices
 function setActiveBotChoice(choice) {
   botButtons.forEach((btn) => {
-    btn.classList.add("opacity-50", "cursor-not-allowed");
+    btn.classList.add("opacity-50");
     btn.classList.remove("ring-4", "ring-red-300");
   });
 
   if (choice === "rock") {
-    rockBtnBot.classList.remove("opacity-50", "cursor-not-allowed");
+    rockBtnBot.classList.remove("opacity-50");
     rockBtnBot.classList.add("ring-4", "ring-red-300");
   } else if (choice === "paper") {
-    paperBtnBot.classList.remove("opacity-50", "cursor-not-allowed");
+    paperBtnBot.classList.remove("opacity-50");
     paperBtnBot.classList.add("ring-4", "ring-red-300");
   } else if (choice === "scissors") {
-    scissorsBtnBot.classList.remove("opacity-50", "cursor-not-allowed");
+    scissorsBtnBot.classList.remove("opacity-50");
     scissorsBtnBot.classList.add("ring-4", "ring-red-300");
   }
 }

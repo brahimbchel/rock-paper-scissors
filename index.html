@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body class="bg-gradient-to-br from-purple-100 to-blue-100 min-h-screen">
+    <header class="text-center text-3xl font-bold text-gray-800 py-6">
+      Rock Paper Scissors
+    </header>
+
+    <div
+      class="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-8 my-auto"
+    >
+      <!-- User Choices -->
+      <div class="flex flex-col gap-4">
+        <h2 class="text-xl font-semibold text-center text-blue-600">
+          Your Choices
+        </h2>
+        <div class="flex md:flex-col gap-3">
+          <button
+            id="rock_user"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-all shadow-md"
+          >
+            Rock
+          </button>
+          <button
+            id="paper_user"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-all shadow-md"
+          >
+            Paper
+          </button>
+          <button
+            id="scissors_user"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-all shadow-md"
+          >
+            Scissors
+          </button>
+        </div>
+      </div>
+
+      <!-- Game Status -->
+      <div class="bg-white p-6 rounded-lg shadow-md space-y-4 min-w-[200px]">
+        <div class="text-center">
+          <p class="text-sm text-gray-600">Score</p>
+          <p class="text-2xl font-bold">
+            <span id="user-score" class="text-blue-600">0</span> /
+            <span id="computer-score" class="text-red-600">0</span>
+          </p>
+        </div>
+
+        <div class="text-center">
+          <p id="result-text" class="text-lg text-gray-600 font-semibold">
+            Make Choise
+          </p>
+        </div>
+      </div>
+
+      <!-- Bot Choices -->
+      <div class="flex flex-col gap-4">
+        <h2 class="text-xl font-semibold text-center text-red-600">
+          Computer Choices
+        </h2>
+        <div class="flex md:flex-col gap-3">
+          <button
+            id="rock_bot"
+            class="bg-red-700 opacity-50 cursor-not-allowed text-white px-6 py-3 rounded-lg shadow-md"
+          >
+            Rock
+          </button>
+          <button
+            id="paper_bot"
+            class="bg-red-700 opacity-50 cursor-not-allowed text-white px-6 py-3 rounded-lg shadow-md"
+          >
+            Paper
+          </button>
+          <button
+            id="scissors_bot"
+            class="bg-red-700 opacity-50 cursor-not-allowed text-white px-6 py-3 rounded-lg shadow-md"
+          >
+            Scissors
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
